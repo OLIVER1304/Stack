@@ -118,6 +118,7 @@ int main(int argc, char *argv[]) {
 					flag=0;
 				} else {
 					printf("\n未初始化栈\n");
+					printf("\n");
 				}
 				system("pause");
 				system("cls");
@@ -129,6 +130,7 @@ int main(int argc, char *argv[]) {
 					LStackLength(s,length);
 				} else {
 					printf("\n未初始化栈\n");
+					printf("\n");
 				}
 				system("pause");
 				system("cls");

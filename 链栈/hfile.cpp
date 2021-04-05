@@ -102,6 +102,7 @@ Status getTopLStack(LinkStack *s,ElemType *e) {
 Status clearLStack(LinkStack *s) {
 	if (s==NULL||s->count==0) {
 		printf("\n栈为空\n");
+		printf("\n");
 		return ERROR;
 	}
 	while(s->top!=NULL) {
@@ -123,8 +124,10 @@ Status destroyLStack(LinkStack *s) {
 		s->top=s->top->next;
 		free(p);
 		free(s->top);
-		printf("\n成功销毁栈\n");
 	}
+	printf("\n成功销毁栈\n");
+	printf("\n");
+	return SUCCESS;
 }
 
 
@@ -132,6 +135,7 @@ Status destroyLStack(LinkStack *s) {
 Status LStackLength(LinkStack *s,int *length) {
 	if (s==NULL||s->count==0) {
 		printf("\n栈为空\n");
+		printf("\n");
 		return ERROR;
 	}
 	*length=s->count;
